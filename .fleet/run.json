@@ -1,5 +1,11 @@
 {
     "configurations": [
+       {
+            "type": "python",
+            "name": "Python configuration",
+            "file": "main.py",
+            "arguments": [],
+        },
         
     ]
 }

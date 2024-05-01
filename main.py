@@ -4,6 +4,8 @@ from Loot.LootTables import Wood_Chest, Skeleton_Enemy, SkeletonTheif_Enemy, Sho
 import Enemies
 from Player import Player
 
+
+
 registeredCharacters = []
 inventory = {}
 enemyPresets = {
@@ -107,7 +109,7 @@ class NPC():
 		print(f"\n({ColoredString(sName, self.NameColor)}): {string}\n")
 
 def Clear():
-	os.system('clear')
+	os.system('cls' if os.name == 'nt' else 'clear')
 
 def ColoredString(string='', color='white', formatNumber=0):
 	color = color.lower()
